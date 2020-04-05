@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Всё о Android! - Переустановка системы</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="icon" href="./assets/css/img/icon.ico"/>
+</head>
+<body>
+<div class="fons"><img src="./assets/css/img/dark_fons.jpg"></div>
+<header>
+    <div id="logo">
+        <span>Android</span>
+    </div>
+    <button id="reg"><a href="reg.html">Регистрация</a></button>
+    <button id="auth"><a href="auth.html">Авторизация</a></button>
+</header>
+<div class="tema">
+    <div id="menu">
+        <ul>
+            <li class="s1"><a href="./index.html">Главная</a></li>
+            <li class="s2"><a href="./reviews.html">Отзывы</a></li>
+            <li class="s3"><a href="./news.html">Новости</a></li>
+            <li class="s5"><a href="./contacts.html">Контакты</a></li>
+            <li class="s6"><a href="./blog.html">Блог</a></li>
+        </ul>
+    </div>
+    <div id="menus">
+        <button class="postBtn">Все посты</button>
+        <ul class="classes ond">
+            <li><a href="./blog1.html">Как переустановить систему Android?</a></li>
+        </ul>
+    </div>
+    <!--          <img src="./assets/css/img/post.png" alt="" class="post1"/>-->
+</div>
+<!--    <div class="left_column">-->
+<!--       <h1>Все посты:</h1>-->
+<!--        <ol>-->
+<!--            <li title="Опубликовано: 25.02.2020 г. в 19:35 (по МСК времени)"><a href="./blog1.html">Как переустановить систему Android?</a></li>-->
+<!--            <li><a href="#"><img src="./assets/css/img/post.png" alt="" class="post1"/> Второй пост</a></li>-->
+<!--            <li><a href="#"><img src="./assets/css/img/post.png" alt="" class="post1"/> Третий пост</a></li>-->
+<!--            <li><a href="#"><img src="./assets/css/img/post.png" alt="" class="post1"/> Четвертый пост</a></li>-->
+<!--            <li><a href="#"><img src="./assets/css/img/post.png" alt="" class="post1"/> Пятый пост</a></li>-->
+<!--            <li><a href="#"><img src="./assets/css/img/post.png" alt="" class="post1"/> Шестой пост</a></li>-->
+<!--            <li><a href="#"><img src="./assets/css/img/post.png" alt="" class="post1"/> Седьмой пост</a></li>-->
+<!--            <li><a href="#"><img src="./assets/css/img/post.png" alt="" class="post1"/> Восьмой пост</a></li>-->
+<!--            <li><a href="#"><img src="./assets/css/img/post.png" alt="" class="post1"/> Девятый пост</a></li>-->
+<!--        </ol>-->
+<!--    </div>-->
+<!-- Код для другого документа!(перенести после того, как будет готов этот код) -->
+<div id="right-cool">
+    <div class="locat_file">
+        <p><a href="./index.html">Главная</a> > Как переустановить систему Android?</p>
+    </div>
+    <div class="icon_left">
+        <img src="./assets/css/img/Android_3D.ico"/>
+    </div>
+    <p class="left_clock">
+        15:45:15
+    </p>
+    <div class="information_right">
+        <h1 class="h1an">Как переустановить систему Android?</h1>
+        <br>
+        <h5 class="h5dt">Опубликовано: 25.02.2020 г. в 19:35 (по МСК времени)</h5>
+        <hr>
+        <br>
+        <p class="text1">
+            Здравствуйте! В этой теме вы научитесь переустанавливать не только андроид, но и саму систему! Это решение такой проблемы как: <p class="a1">"Случайно удалил Recovery вместе с Android",</p> <p class="a1">"Телефон не включается, а в рекавери заходить не хочет, либо его попросту нету".</p>
+        </p>
+        <br>
+        <p class="text1">
+            Для начала, если у вас проблема с тем, что телефон не включается, то переходим к пункту 2. Если же у вас проблема с тем, что у вас нету на телефоне рекавери, то читаем далее.
+        </p>
+        <br>
+        <p style="font-weight: bold; font-size: 19px;">Установка Recovery(Если у вас его нету)</p>
+        <br>
+        <p>
+            <ol id="installls">
+                <li class="adb">
+        <p>Сначала скачиваем архив с ADB и Recovery: <button><a href="https://yadi.sk/d/3eRHb65n3PtuEe"class="button17" tabindex="0">СКАЧАТЬ(Яндекс Диск)</a></button></p>
+        <p>Распаковываем обязательно куда-нибудь, где путь прописан только латинскими символами. При русских буквах в пути будет ошибка.</p>
+        <br>
+        <p>Далее смартфон необходимо подключить к компьютеру и перезапустить в режиме Fastboot. Для этого при включении необходимо зажать кнопку "- volume" (нижняя часть качельки громкости над кнопкой включения смартфона) и собственно саму кнопку включения.</p>
+        <p>После появления логотипа на экране отпускаем кнопку включения, но оставляем зажатой кнопку убавления громкости, пока не дождёмся вот такого изображения на экране:</p>
+        <br><img src="./assets/css/img/adb.jpg" alt="Режим Fastboot" style="width: 270px; height: 417px;">
+        <p><br>Открываем папку с ADB, зажимаем Shift и кликаем правой кнопкой мыши по пустому пространству.</p>
+        <p>В выпавшем окне выбираем "Открыть окно команд"</p>
+        <p>В командной строке вводим:</p>
+        <code>fastboot flash recovery twrp.img</code><br>
+        <br><img src="./assets/css/img/twrp_install.jpg" alt="">
+        </li>
+        <br>
+        <h1>Прошивка через установленное Recovery</h1>
+        <br>
+        <li class="prosh">
+            <p>Перезапускаем смартфон в режим Recovery — для этого необходимо при включении зажать кнопки "громкость вверх" и кнопку включения смартфона, дождаться виброотклика и отпустить кнопку включения, оставив зажатой кнопку "громкость вверх".</p>
+            <p><br>Если вы всё сделали правильно, то вы попадёте в TWRP.</p>
+            <br><img src="./assets/css/img/twrp_prosh.jpg" alt="" class="prosh">
+            <p class="wipe">Далее выполняем очистку Wipe — Advanced Wipe — ставим всегалочки кроме MicroSD и OTG 
+            <span class="spa">ВНИМАНИЕ ВСЕ ДАННЫЕ ВАШЕГО СМАРТФОНА БУДУТ СТЕРТЫ!</span>
+            <br>
+            <br>На сайте <a href="https://4pda.ru/devdb/phones/all">4pda.ru</a> находим прошивку для вашей модели телефона. Для установки через TWRP подойдут прошивки для recovery, с расширением .zip.
+            <br>
+            <br>Скачиваем прошивку, перезагружаем из recovery снова в recovery (Reboot->Recovery), подключаем телефон к компьютеру(он определится как MTP устройство MI5X). Копируем прошивку во внутреннюю память телефона или на флешку. 
+            <br>
+        <br>После чего, в TWRP переходим в меню install, выбираем наш файл с прошивкой и жмем install, ждем пока смартфон загрузится (первая загрузка может длится довольно долго). 
+        <br>Наслаждаемся новой прошивкой.</p>
+        </li>
+            </ol>
+        </p>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<script src="./assets/js/script.js"></script>
+</body>
+</html>
