@@ -202,7 +202,7 @@ header {
     left: 150px;
     width: 83%;
     height: 2700px;
-    padding: 2%;
+    padding: 1%;
     background-color: white;
     box-shadow: 0 2px 4px 10px rgba(12, 12, 12, 0.2);
 }
@@ -342,7 +342,7 @@ a.button17:before {
     padding-left: 1.5%;
     padding-bottom: 0.5%; 
     color: white;
-    display: left;
+    float: left;
     width: 180px;
     height: 50px;
     background-color: black;
@@ -358,4 +358,126 @@ a.button17:before {
     color: #120e6c;
     cursor: pointer;
     font-weight: bold;
+}
+
+#right-cool .information_rights {
+    position: relative;
+    top: -50px;
+    left: 20%;
+    width: 980px;
+    height: 95%;
+}
+#right-cool .information_rights .h1{
+    position: absolute;
+    top:50px;
+    font-size: 38pt;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    /*padding-bottom: 30px;*/
+}
+/*#right-cool .information_rights .h1{*/
+/*    position: relative;*/
+/*    width: 500px;*/
+/*    height: 70px;*/
+/*}*/
+#right-cool .post_repair {
+    position: absolute;
+    top: 130px;
+    left: 10px;
+    width: 800px;
+    height: 630px;
+    background-color: #D7D7D7;
+    color: #444444;
+    margin-left: 40px;
+}
+#right-cool .post_repair h2 {
+    font-size: 35px;
+    font-style: italic;
+    color: black;
+    font-variant: small-caps;
+}
+#right-cool .post_repair p{
+    font-size: 23px;
+    font-variant: small-caps;
+    text-indent: 30px;
+}
+#right-cool .post_repair img {
+    position: relative;
+    width: 800px;
+    height: 500px;
+}
+
+#full {
+    float: right;
+    width: 170px;
+    height: 30px;
+    background-color: rgba(255,255,255,0);
+    border: 2px solid forestgreen;
+    cursor: pointer;
+}
+#full:hover, #full:active {
+    background-color: forestgreen;
+}
+#full a {
+    color: black;
+    font-weight: bold;
+}
+#full a:hover {
+    color: white;
+}
+#right-cools {
+    position: absolute;
+    top: 85px;
+    left: 150px;
+    width: 83%;
+    height: 600px;
+    padding: 1%;
+    background-color: white;
+    box-shadow: 0 2px 4px 10px rgba(12, 12, 12, 0.2);
+}
+#contacts {
+    position: relative;
+    top: 30px;
+    left: 25%;
+}
+#contacts .h3 {
+    position: relative;
+    left: -270px;
+    font-size: 20pt;
+
+}
+#contacts .email{
+    position: absolute;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+#contacts .email1 {
+    text-align: center;
+    position: absolute;
+    left: 190px;
+}
+#contacts .tel{
+    position: absolute;
+    top: 100px;
+}
+#contacts .tel1 {
+    position: absolute;
+    top: 100px;
+    left: 190px;
+}
+
+#timess {
+    height: 50px;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: black;
+}
+#timess .h2 {
+    font-size: 28pt;
+    margin-bottom: 23px;
+    color: white;
+    position: relative;
+    left: 40%;
 }
